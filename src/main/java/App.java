@@ -17,7 +17,7 @@ public class App {
     public static void main(String[] args) {
         get("/hello", (req, res) -> {
             Map<String, Object> model = new HashMap<String, Object>();
-            return new ModelAndView(model, "hello.hbs");
+            return new ModelAndView(model, "newHeroForm.hbs");
         }, new HandlebarsTemplateEngine());
     }
 }

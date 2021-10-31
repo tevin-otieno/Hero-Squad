@@ -65,8 +65,8 @@ public class Hero {
         this.power = power;
         this.weakness = weakness;
         this.squadId = squadId;
-//        Squad squad = Squad.find(squadId);
-//        squad.addHero(this);
+        Squad squad = Squad.find(squadId);
+        squad.addHero(this);
         apperance.add(this);
         this.id = apperance.size();
     }
