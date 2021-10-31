@@ -87,4 +87,8 @@ public class Squad {
     public static Squad find(int n) {
         return apperance.get(n-1);
     }
+
+    public static ArrayList<Squad> getSquads() {
+        return apperance;
+    }
 }

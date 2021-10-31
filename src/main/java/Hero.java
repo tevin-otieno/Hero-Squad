@@ -78,4 +78,7 @@ public class Hero {
         apperance.clear();
     }
 
+    public static List<Hero> getHeroes() {
+        return apperance;
+    }
 }
