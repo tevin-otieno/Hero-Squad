@@ -23,12 +23,12 @@ public class Hero {
         this.squadId = squadId;
     }
 
-    public static List<Hero> getApperance() {
-        return apperance;
+    public static List<Hero> getAppearance() {
+        return appearance;
     }
 
-    public static void setApperance(List<Hero> apperance) {
-        Hero.apperance = apperance;
+    public static void setAppearance(List<Hero> appearance) {
+        Hero.appearance = appearance;
     }
 
     private int id;
@@ -58,7 +58,7 @@ public class Hero {
         this.weakness = weakness;
     }
 
-    private static List<Hero> apperance = new ArrayList<Hero>();
+    private static List<Hero> appearance = new ArrayList<Hero>();
 
     public Hero(String name, String power, String weakness, int squadId) {
         this.name = name;
@@ -67,18 +67,18 @@ public class Hero {
         this.squadId = squadId;
         Squad squad = Squad.find(squadId);
         squad.addHero(this);
-        apperance.add(this);
-        this.id = apperance.size();
+        appearance.add(this);
+        this.id = appearance.size();
     }
     public static Hero findHero(int n) {
-        return apperance.get(n-1);
+        return appearance.get(n-1);
     }
 
     public static void clearAll() {
-        apperance.clear();
+        appearance.clear();
     }
 
     public static List<Hero> getHeroes() {
-        return apperance;
+        return appearance;
     }
 }

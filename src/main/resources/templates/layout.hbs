@@ -6,6 +6,7 @@
         rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
         crossorigin="anonymous">
+        <link rel="stylesheet" href="app.css">
     </head>
     <body>
         <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
@@ -18,18 +19,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" href="/">Home</a>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Squads</a>
+                            <a class="nav-link" href="/squads">Squads</a>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Heroes</a>
+                            <a class="nav-link" href="/heroes">Heroes</a>
                         </li>
-                        <li class="nav-item">
-                            <div>
-                                <button type="button" class="btn btn-outline-light">New Squad</button>
-                                <button type="button" class="btn btn-outline-light">New Hero</button>
-                            </div>
-                        </li>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <a class="btn btn-outline-light me-md-2" href="/squads/new">New Squad</a>
+                            <a class="btn btn-outline-light" href="/heroes/new">New Hero</a>
+                        </div>
                     </ul>
                 </div>
             </div>

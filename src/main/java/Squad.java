@@ -7,15 +7,15 @@ public class Squad {
     private int size;
     private String cause;
     private int id;
-    private static ArrayList<Squad> apperance = new ArrayList<Squad>();
+    private static ArrayList<Squad> appearance = new ArrayList<Squad>();
     private List<Hero> heroes = new ArrayList<Hero>();
 
     public Squad(String name, int size, String cause) {
         this.name = name;
         this.size = size;
         this.cause = cause;
-        apperance.add(this);
-        this.id = apperance.size();
+        appearance.add(this);
+        this.id = appearance.size();
     }
 
     public String getName() {
@@ -50,12 +50,12 @@ public class Squad {
         this.id = id;
     }
 
-    public static ArrayList<Squad> getApperance() {
-        return apperance;
+    public static ArrayList<Squad> getAppearance() {
+        return appearance;
     }
 
-    public static void setApperance(ArrayList<Squad> apperance) {
-        Squad.apperance = apperance;
+    public static void setAppearance(ArrayList<Squad> appearance) {
+        Squad.appearance = appearance;
     }
 
     public List<Hero> getHeroes() {
@@ -81,14 +81,14 @@ public class Squad {
     }
 
     public static void clearSquads() {
-        apperance.clear();
+        appearance.clear();
     }
 
     public static Squad find(int n) {
-        return apperance.get(n-1);
+        return appearance.get(n-1);
     }
 
     public static ArrayList<Squad> getSquads() {
-        return apperance;
+        return appearance;
     }
 }
