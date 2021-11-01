@@ -42,7 +42,7 @@ public class App {
 
             Squad newSquad = new Squad(name, size, cause);
             squads.add(newSquad);
-            return new ModelAndView(model, "success.hbs");
+            return new ModelAndView(model, "success-s.hbs");
         }, new HandlebarsTemplateEngine());
 
         get("/squads", (request, response) -> {
@@ -75,12 +75,11 @@ public class App {
             }
             Squad squad = Squad.find(Integer.parseInt(request.queryParams("squadId")));
             String name = request.queryParams("name");
-            int age = Integer.parseInt(request.queryParams("age"));
             String power = request.queryParams("power");
             String weakness = request.queryParams("weakness");
             Hero newhero = new Hero(name,power,weakness,squad.getId());
             heroes.add(newhero);
-            return new ModelAndView(model, "success.hbs");
+            return new ModelAndView(model, "success-h.hbs");
         }, new HandlebarsTemplateEngine());
 
         get("/heroes",(request, response) -> {
