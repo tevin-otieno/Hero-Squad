@@ -22,7 +22,7 @@ class SquadTest {
     }
 
     @Test
-    @DisplayName("Siza getter")
+    @DisplayName("Size getter")
     void getSize() {
     }
 
