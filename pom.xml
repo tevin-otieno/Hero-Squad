@@ -82,9 +82,9 @@
                 <version>2.0.3</version>
                 <configuration>
                     <jdkVersion>1.8</jdkVersion>
-                    <appName>hero-squad</appName>
+                    <appName>spark-herosquad</appName>
                     <processTypes>
-                        <web>java -jar target/hero-squad-1.0-jar-with-dependencies.jar</web>
+                        <web>java -jar target/spark-herosquad-1.0-jar-with-dependencies.jar</web>
                     </processTypes>
                 </configuration>
             </plugin>
